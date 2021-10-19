@@ -1,0 +1,45 @@
+.xxx {
+    background: ghostwhite;
+    height: 960px;
+    width: 500px;
+    /*column-gap: 5px;*/
+
+    display: flex;
+    /*flex-direction: row;*/
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.box {
+    /*border: 5px double;*/
+    text-align: center;
+}
+.widgets {
+    height: 250px;
+    width: 480px;
+    line-height: 250px;
+    background: dodgerblue;
+}
+.big_widgets {
+    height: 180px;
+    width: 146px;
+    background: blue;
+    line-height: 180px;
+}
+.bigger_widgets {
+    height: 180px;
+    width: 146px;
+    background: blue;
+    line-height: 180px;
+}
+.huge_widgets{
+    height: 180px;
+    width: 146px;
+    background: blue;
+    line-height: 180px;
+}
+.contact {
+    height: 480px;
+    width: 480px;
+    line-height: 500px;
+    background: deepskyblue;
+}
