@@ -1,0 +1,45 @@
+.xxx {
+    background: gray;
+    height: 600px;
+    width: 640px;
+    /*column-gap: 5px;*/
+;
+
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box {
+    text-align: center;
+}
+.header {
+    height: 110px;
+    width: 640px;
+    line-height: 100px;
+    background: cornflowerblue;
+}
+.nav {
+    height: 90px;
+    width: 640px;
+    line-height: 90px;
+    background: #1515b7;
+}
+.main {
+    height: 300px;
+    width: 490px;
+    line-height: 300px;
+    background: cadetblue;
+}
+.aside {
+    height: 300px;
+    width: 150px;
+    line-height: 300px;
+    background: #9c57bf;
+}
+.footer {
+    height: 95px;
+    width: 640px;
+    line-height: 100px;
+    background: aquamarine;
+}
