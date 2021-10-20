@@ -1,0 +1,44 @@
+.container {
+    width: 550px;
+    background: ghostwhite;
+    margin: 0 auto;
+    /*justify-content: space-evenly;*/
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: ghostwhite;
+    font-family: Verdana;
+    margin: 5px;
+    box-sizing: border-box;
+    background: lightgray ;
+}
+.ha {
+    height: 450px;
+    display: flex;
+}
+.home, .about {
+    background: cornflowerblue;
+    width: 50%;
+}
+.kabobs {
+    background: cornflowerblue;
+    height: 200px;
+}
+.minus_kabobs {
+    height: 220px;
+    display: flex;
+}
+.darkblue {
+    background: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+}
+.shishkabobs, .bbq_kabobs, .summer_kabobs {
+    background: mediumslateblue;
+    height: 200px;
+    width: 33.3%;
+}
