@@ -1,0 +1,42 @@
+.container {
+    width: 600px;
+    background: ghostwhite;
+    margin: 0 auto;
+    border: thick solid white;
+    border-radius: 8px;
+    /*justify-content: space-evenly;*/
+}
+.box {
+    border: solid #9c57bf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: lightgray ;
+}
+.a {
+    height: 100px;
+}
+.minus_a {
+    height: 220px;
+    display: flex;
+
+}
+.bcd, .efg {
+    background: none;
+    display: flex;
+    flex-direction: row;
+}
+.b, .c, .d, .e, .f, .g {
+    height: 100px;
+    width: 33%;
+}
+.minus_ah {
+    width: 80%;
+}
+.h {
+    height: 210px;
+    width: 20%;
+}
