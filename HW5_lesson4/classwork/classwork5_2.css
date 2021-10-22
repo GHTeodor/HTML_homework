@@ -80,7 +80,7 @@
     border: none;
 }
 .products {
-    padding: 100px;
+    padding: 10px 60px;
     background-color: lightgray;
 }
 .products_title {
@@ -145,9 +145,144 @@
     background-color: lightgray;
 }
 .thebigone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+    padding: 20px;
+}
+.thefirstone{
+    text-align: center;
+}
+.tfo, .tso {
+    display: inline-block;
+    margin-right: 15px;
+    text-transform: uppercase;
+}
+.tfo a, .tso  a {
+    text-decoration: none;
+    font-size: 20px;
+    transition: color .5s;
+    color: blue;
+    font-weight: 900;
+}
+.tfo a:hover, .tso  a:hover {
+    color: lightgreen;
+}
+.thesecondone {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    width: 80%;
+    padding: 5px;
+    margin: 50px 0;
+    border: dotted medium darkgreen;
+    border-radius: 10px;
+}
+.tvs {
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-around;*/
 
 }
+.tv {
+    width: 30%;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    flex-grow: 6;
+    flex-wrap: wrap-reverse;
+    border: solid medium cornflowerblue;
+    border-radius: 5px;
+    justify-content: space-around;
+    margin: 4px;
+}
+.video {
+    background-color: royalblue;
+    height: 200px;
+    flex-grow: 1;
+    border-radius: 10px;
+}
+.under_video {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.under_video1_left {
+    height: 10px;
+    width: 30%;
+    background-color: royalblue;
+    border-radius: 5px;
+}
+.under_video1_right {
+    display: flex;
+    text-transform: uppercase;
+}
+.under_video1_right a {
+    text-decoration: none;
+    transition: color .5s;
+    color: blue;
+}
+.under_video1_right a:hover {
+    color: lightgreen;
+}
+.h3_tv, .p_tv {
+    color: royalblue;
+}
+.tv_down {
+    display: flex;
+    justify-content: space-between;
+}
+.tv_button {
+    background-color: royalblue;
+    color: cornflowerblue;
+    border-radius: 20px;
+    cursor: grab;
+    border: none;
+}
+.tv_down_tritem {
+    display: flex;
+}
+.tv_down__item {
+    color: royalblue;
+}
 
+.thethirdone {
+    display: flex;
+    justify-content: center;
+
+}
+.image1 {
+    background-color: royalblue;
+    padding: 20px;
+}
+.image2 {
+    padding: 20px;
+    background-color: cornflowerblue;
+}
+.h2_1, .p2_1 {
+    color: cornflowerblue;
+}
+.h2_2, .p2_2 {
+    color: royalblue;
+}
+.down_double_button1, .down_double_button2 {
+    margin-top: 25px;
+    width: 300px;
+    border-radius: 20px;
+    height: 20px;
+    cursor: grab;
+    border: none;
+}
+.down_double_button1 {
+    color: royalblue;
+    background-color: cornflowerblue;
+}
+.down_double_button2 {
+    color: cornflowerblue;
+    background-color: royalblue;
+}
+.button_left{
+    padding-right: 150px;
+}
 .footer {
     height: 80px;
     background-color: royalblue;
