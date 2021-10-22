@@ -1,0 +1,48 @@
+.xxx {
+    margin: 0 auto;
+    padding: 8px;
+    background: wheat;
+    width: 640px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px double;
+}
+.boxm {
+    line-height: 190px;
+    text-align: center;
+    border: 5px double;
+}
+ .height100_width130 {
+    height: 130px;
+    width: 100%;
+ }
+#header {
+    background: #b4d786;
+    margin-bottom: 10px;
+}
+#menu {
+    height: 380px;
+    width: 160px;
+    background: violet;
+    margin-right: 10px;
+
+}
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 460px;
+}
+.post1, .post2 {
+    height: 180px;
+    background: mediumaquamarine;
+}
+#footer {
+    margin-top: 10px;
+    background: palegoldenrod;
+}

@@ -1,0 +1,32 @@
+.container {
+    margin: 0 auto;
+    width: 550px;
+    background-color: lightgray;
+    border-radius: 5px;
+    border: solid thin lightgray;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: thin solid red;
+    margin: 5px;
+    background-color: gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.a {
+    height: 100px;
+}
+.bc {
+    display: flex;
+    flex-direction: row;
+}
+.b {
+    height: 200px;
+    width: 80%;
+}
+.c {
+    height: 200px;
+    width: 20%;
+}

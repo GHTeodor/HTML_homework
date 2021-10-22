@@ -1,0 +1,31 @@
+.xxx {
+    margin: 0 auto;
+    background: ghostwhite;
+    height: 960px;
+    width: 500px;
+    padding: 1%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: ghostwhite;
+}
+.widgets {
+    height: 250px;
+    width: 480px;
+    background: dodgerblue;
+}
+.big_widgets, .bigger_widgets,.huge_widgets {
+    height: 180px;
+    width: 146px;
+    background: blue;
+}
+.contact {
+    height: 480px;
+    width: 480px;
+    background: deepskyblue;
+}

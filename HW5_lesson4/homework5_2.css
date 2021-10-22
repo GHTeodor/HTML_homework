@@ -1,0 +1,42 @@
+.xxx {
+    background: gray;
+    height: 600px;
+    width: 640px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.width100 {
+    width: 100%;
+}
+.header {
+    border-bottom: solid gray medium;
+    height: 25%;
+    background: cornflowerblue;
+}
+.nav {
+    background: #1515b7;
+}
+.heigh59 {
+    height: 59%;
+}
+.main {
+    flex-grow: 4;
+    background: cadetblue;
+}
+.aside {
+    border-left: solid gray medium;
+    flex-grow: 1;
+    background: #9c57bf;
+}
+.footer {
+    background: aquamarine;
+}
+.height17{
+    height: 17%;
+}
