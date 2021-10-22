@@ -117,7 +117,7 @@
 }
 .about_card {
     width: 30%;
-    border: thin solid transparent;
+    border: medium solid transparent;
     border-radius: 10px;
     display: flex;
     justify-content: center;
