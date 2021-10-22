@@ -84,7 +84,8 @@
     background-color: lightgray;
 }
 .products_title {
-    align-items: center;
+    margin-bottom: 15px;
+    text-align: center;
 }
 .products_grid {
     padding: 20px;
