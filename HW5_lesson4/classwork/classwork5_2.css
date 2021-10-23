@@ -1,3 +1,11 @@
+:root {
+    --blue: blue;
+    --noblue: #0b2e41;
+    --aqua: #00c7ea;
+    --cornflowerblue: cornflowerblue;
+    --light: #cad7e0;
+    --lightgreen: lightgreen;
+}
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +15,7 @@
     padding: 0 50px;
 }
 .icon_1 {
-    background-color: cornflowerblue;
+    background-color: var(--cornflowerblue);
     height: 40px;
     display: flex;
     align-items: center;
@@ -19,15 +27,15 @@
 .icon_link {
     width: 25px;
     height: 5px;
-    background-color: blue;
+    background-color: var(--noblue);
 }
 .header {
-    background-color: cornflowerblue;
-    color: ghostwhite;
+    background-color: var(--cornflowerblue);
+    color: var(--noblue) ;
 }
 .header__top {
     padding: 10px 0 20px;
-    background-color: lightgray;
+    background-color: var(--light);
 }
 .header__top_grid {
     display: flex;
@@ -38,7 +46,7 @@
     height: 50px;
     width: 150px;
     border-radius: 5px;
-    background-color: blue;
+    background-color: var(--noblue);
 }
 .nav_item {
     display: inline-block;
@@ -49,11 +57,11 @@
     font-size: 20px;
     text-transform: uppercase; //великі_літери;
     transition: color .5s;
-    color: blue;
+    color: var(--blue);
     font-weight: 900;
 }
 .nav_item a:hover {
-    color: lightgreen;
+    color: var(--lightgreen);
 }
 .header__main {
     display: flex;
@@ -67,13 +75,13 @@
     width: 80%;
     line-height: 24px;
     text-align: center;
-    color: blue;
+    color: var(--blue);
 }
 .header__main button {
     margin-top: 25px;
-    background-color: royalblue;
+    background-color: var(--noblue);
     width: 300px;
-    color: ghostwhite;
+    color: var(--light);
     border-radius: 20px;
     height: 20px;
     cursor: grab;
@@ -81,7 +89,7 @@
 }
 .products {
     padding: 10px 60px;
-    background-color: lightgray;
+    background-color: var(--light);
 }
 .products_title {
     margin-bottom: 15px;
@@ -89,7 +97,7 @@
 }
 .products_grid {
     padding: 20px;
-    border: 1px solid cornflowerblue;
+    border: 1px solid var(--cornflowerblue);
     border-radius: 20px;
 }
 .products__list {
@@ -105,11 +113,11 @@
 }
 .products__item_img {
     height: 200px;
-    background-color: blue;
+    background-color: var(--noblue);
     border-radius: 10px;
 }
 .about {
-    background-color: steelblue;
+    background-color: var(--noblue);
     padding: 50px 0;
 }
 .about__grid {
@@ -126,13 +134,13 @@
     flex-direction: column;
     align-items: center;
     row-gap: 10px;
-    color: ghostwhite;
+    color: var(--light);
     transition: all .75s;
     padding: 10px;
     cursor: pointer;
 }
 .about_card:hover {
-    border-color: cornflowerblue;
+    border-color: var(--aqua);
 }
 .about__name {
     font-size: 22px;
@@ -142,13 +150,13 @@
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    background-color: lightgray;
+    background-color: var(--light);
 }
 .thebigone {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: lightgray;
+    background-color: var(--light);
     padding: 20px;
 }
 .thefirstone{
@@ -163,11 +171,11 @@
     text-decoration: none;
     font-size: 20px;
     transition: color .5s;
-    color: blue;
+    color: var(--blue);
     font-weight: 900;
 }
 .tfo a:hover, .tso  a:hover {
-    color: lightgreen;
+    color: var(--lightgreen);
 }
 .thesecondone {
     /*display: flex;*/
@@ -190,13 +198,14 @@
     /*flex-direction: column;*/
     flex-grow: 6;
     flex-wrap: wrap-reverse;
-    border: solid medium cornflowerblue;
+    border: solid medium var(--cornflowerblue);
     border-radius: 5px;
     justify-content: space-around;
     margin: 4px;
+    padding: 5px;
 }
 .video {
-    background-color: royalblue;
+    background-color: var(--noblue);
     height: 200px;
     flex-grow: 1;
     border-radius: 10px;
@@ -209,7 +218,7 @@
 .under_video1_left {
     height: 10px;
     width: 30%;
-    background-color: royalblue;
+    background-color: var(--noblue);
     border-radius: 5px;
 }
 .under_video1_right {
@@ -219,21 +228,21 @@
 .under_video1_right a {
     text-decoration: none;
     transition: color .5s;
-    color: blue;
+    color: var(--blue);
 }
 .under_video1_right a:hover {
-    color: lightgreen;
+    color: var(--lightgreen);
 }
 .h3_tv, .p_tv {
-    color: royalblue;
+    color: var(--noblue);
 }
 .tv_down {
     display: flex;
     justify-content: space-between;
 }
 .tv_button {
-    background-color: royalblue;
-    color: cornflowerblue;
+    background-color: var(--noblue);
+    color: var(--cornflowerblue);
     border-radius: 20px;
     cursor: grab;
     border: none;
@@ -242,7 +251,7 @@
     display: flex;
 }
 .tv_down__item {
-    color: royalblue;
+    color: var(--noblue);
 }
 
 .thethirdone {
@@ -251,18 +260,18 @@
 
 }
 .image1 {
-    background-color: royalblue;
+    background-color: var(--noblue);
     padding: 20px;
 }
 .image2 {
     padding: 20px;
-    background-color: cornflowerblue;
+    background-color: var(--cornflowerblue);
 }
 .h2_1, .p2_1 {
-    color: cornflowerblue;
+    color: var(--cornflowerblue);
 }
 .h2_2, .p2_2 {
-    color: royalblue;
+    color: var(--noblue);
 }
 .down_double_button1, .down_double_button2 {
     margin-top: 25px;
@@ -273,26 +282,26 @@
     border: none;
 }
 .down_double_button1 {
-    color: royalblue;
-    background-color: cornflowerblue;
+    color: var(--noblue);
+    background-color: var(--cornflowerblue);
 }
 .down_double_button2 {
-    color: cornflowerblue;
-    background-color: royalblue;
+    color: var(--cornflowerblue);
+    background-color: var(--noblue);
 }
 .button_left{
     padding-right: 150px;
 }
 .footer {
     height: 80px;
-    background-color: royalblue;
+    background-color: var(--noblue);
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 40%;
 }
 .footerb {
-    background-color: ghostwhite;
+    background-color: var(--light);
     height: 20px;
     width: 20px;
     border-radius: 5px;
