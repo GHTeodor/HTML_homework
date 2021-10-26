@@ -1,0 +1,70 @@
+@media screen and (max-width: 640px) {
+    .nav_item a {
+        padding-left: 35%;
+    }
+    .products {
+        padding: 10px;
+    }
+    .products__list {
+        display: block;
+    }
+    .products__item p {
+        margin-bottom: 3%;
+    }
+    .thesecondone {
+    width: 100%;
+    }
+    .thethirdone {
+        display: block;
+        width: 100%;
+        padding: 0;
+        /*box-sizing: border-box;*/
+    }
+    .image1, .image2 {
+        margin: 0 auto;
+        width: 60%;
+    }
+    .about__grid {
+        overflow-x: scroll;
+    }
+    .about_card {
+    margin: 0 10%;
+    width: 100%;
+    }
+    .tvs {
+        display: block;
+        padding: 10px;
+    }
+    .tv {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    button {
+        box-shadow: 1px 2px var(--lightgreen);
+    }
+    .button_left{
+        padding-right: 0;
+    }
+    .down_double_button1, .down_double_button2 {
+        width: 100%;
+    }
+}
+
+@media (orientation: landscape) {
+    .products__item:hover {
+        transition: .5s;
+        transform: scale(1.1);
+        border-radius: 5px;
+        padding: 1%;
+    }
+    .thethirdone {
+        display: block;
+    }
+    .image1, .image2 {
+        padding-right: 0;
+    }
+    .image1:hover, .image2:hover {
+    transition: 0.5s;
+    transform: scale(1.25);
+    }
+}

@@ -1,0 +1,326 @@
+:root {
+    --blue: blue;
+    --noblue: #0b2e41;
+    --aqua: #00c7ea;
+    --cornflowerblue: cornflowerblue;
+    --light: #cad7e0;
+    --lightgreen: lightgreen;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: orange;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: blue;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid orange;  /* creates padding around scroll thumb */
+}
+.wrapper {
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.icon_1 {
+    background-color: var(--cornflowerblue);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 25px;
+    column-gap: 5px;
+    list-style: none;
+}
+.icon_link {
+    width: 25px;
+    height: 5px;
+    background-color: var(--noblue);
+}
+.header {
+    background-color: var(--cornflowerblue);
+    color: var(--noblue) ;
+}
+.header__top {
+    padding: 10px 0 20px;
+    background-color: var(--light);
+}
+.header__top_grid {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+.header__logo {
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: var(--noblue);
+}
+.nav_item {
+    display: inline-block;
+    margin-right: 15px;
+}
+.nav_item a {
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase; //великі_літери;
+    transition: color .5s;
+    color: var(--blue);
+    font-weight: 900;
+}
+.nav_item a:hover {
+    color: var(--lightgreen);
+}
+.header__main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+    padding: 100px 0;
+}
+.header__text {
+    width: 80%;
+    line-height: 24px;
+    text-align: center;
+    color: var(--blue);
+}
+.header__main button {
+    margin-top: 25px;
+    background-color: var(--noblue);
+    width: 300px;
+    color: var(--light);
+    border-radius: 20px;
+    height: 20px;
+    cursor: grab;
+    border: none;
+}
+.products {
+    padding: 10px 60px;
+    background-color: var(--light);
+}
+.products_title {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.products_grid {
+    padding: 20px;
+    border: 1px solid var(--cornflowerblue);
+    border-radius: 20px;
+}
+.products__list {
+    display: flex;
+    column-gap: 30px;
+}
+.products__item {
+    flex-grow: 1;
+}
+.products__item p {
+    text-align: center;
+    margin-top: 15px;
+}
+.products__item_img {
+    height: 200px;
+    background-color: var(--noblue);
+    border-radius: 10px;
+}
+.about {
+    background-color: var(--noblue);
+    padding: 50px 0;
+}
+.about__grid {
+    display: flex;
+    justify-content: space-between;
+}
+.about_card {
+    width: 30%;
+    border: medium solid transparent;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    color: var(--light);
+    transition: all .75s;
+    padding: 10px;
+    cursor: pointer;
+}
+.about_card:hover {
+    border-color: var(--aqua);
+}
+.about__name {
+    font-size: 22px;
+    font-weight: 700;
+}
+.about__photo > div {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: var(--light);
+}
+.thebigone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light);
+    padding: 20px;
+}
+.thefirstone{
+    text-align: center;
+}
+.tfo, .tso {
+    display: inline-block;
+    margin-right: 15px;
+    text-transform: uppercase;
+}
+.tfo a, .tso  a {
+    text-decoration: none;
+    font-size: 20px;
+    transition: color .5s;
+    color: var(--blue);
+    font-weight: 900;
+}
+.tfo a:hover, .tso  a:hover {
+    color: var(--lightgreen);
+}
+.thesecondone {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    width: 80%;
+    padding: 5px;
+    margin: 50px 0;
+    border: dotted medium darkgreen;
+    border-radius: 10px;
+}
+.tvs {
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-around;*/
+
+}
+.tv {
+    width: 30%;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    flex-grow: 6;
+    flex-wrap: wrap-reverse;
+    border: solid medium var(--cornflowerblue);
+    border-radius: 5px;
+    justify-content: space-around;
+    margin: 4px;
+    padding: 5px;
+}
+.video {
+    background-color: var(--noblue);
+    height: 200px;
+    flex-grow: 1;
+    border-radius: 10px;
+}
+.under_video {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.under_video1_left {
+    height: 10px;
+    width: 30%;
+    background-color: var(--noblue);
+    border-radius: 5px;
+}
+.under_video1_right {
+    display: flex;
+    text-transform: uppercase;
+}
+.under_video1_right a {
+    text-decoration: none;
+    transition: color .5s;
+    color: var(--blue);
+}
+.under_video1_right a:hover {
+    color: var(--lightgreen);
+}
+.h3_tv, .p_tv {
+    color: var(--noblue);
+}
+.tv_down {
+    display: flex;
+    justify-content: space-between;
+}
+.tv_button {
+    background-color: var(--noblue);
+    color: var(--cornflowerblue);
+    border-radius: 20px;
+    cursor: grab;
+    border: none;
+}
+.tv_down_tritem {
+    display: flex;
+}
+.tv_down__item {
+    color: var(--noblue);
+}
+
+.thethirdone {
+    display: flex;
+    justify-content: center;
+
+}
+.image1 {
+    background-color: var(--noblue);
+    padding: 20px;
+}
+.image2 {
+    padding: 20px;
+    background-color: var(--cornflowerblue);
+}
+.h2_1, .p2_1 {
+    color: var(--cornflowerblue);
+}
+.h2_2, .p2_2 {
+    color: var(--noblue);
+}
+.down_double_button1, .down_double_button2 {
+    margin-top: 25px;
+    width: 300px;
+    border-radius: 20px;
+    height: 20px;
+    cursor: grab;
+    border: none;
+}
+.down_double_button1 {
+    color: var(--noblue);
+    background-color: var(--cornflowerblue);
+}
+.down_double_button2 {
+    color: var(--cornflowerblue);
+    background-color: var(--noblue);
+}
+.button_left{
+    padding-right: 150px;
+}
+.footer {
+    height: 80px;
+    background-color: var(--noblue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40%;
+}
+.footerb {
+    background-color: var(--light);
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    margin: 5px;
+}
+.footerbbb {
+    display: flex;
+    justify-content: center;
+}
