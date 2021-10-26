@@ -113,6 +113,7 @@ table {
     position: relative;
     display: inline-block;
 }
+.header__button_uwow:focus .header__button_wow,
 .header__button_uwow:hover .header__button_wow {
     display: block;
 }
