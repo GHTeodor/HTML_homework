@@ -1,0 +1,106 @@
+.header {
+    background: rgba(255,255,255,0.3);
+    mix-blend-mode: normal;
+    border: 1px solid white;
+    backdrop-filter: blur(20px);
+}
+.navbar-light .navbar-nav .nav-link {
+    border: 2px solid transparent;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #2E75FF;
+    border: 2px solid #EAEDF5;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.first-screen-left {
+    margin-top: 100px;
+
+}
+.first-screen-left h1 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: -0.4px;
+    color: #1652AC;
+}
+.first-screen-left .first-screen-text {
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #020303;
+    margin-top: 120px;
+    position: relative;
+}
+.first-screen-left .first-screen-text::before,
+.first-screen-left .first-screen-text::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 227px;
+    height: 7px;
+    background-color: #EDEFF3;
+}
+.first-screen-left .first-screen-text::before {
+    top: -55px;
+}
+.first-screen-left .first-screen-text::after {
+    bottom: -55px;
+}
+.first-screen-right img {
+    width: 100%;
+}
+.first-screen-text2 {
+    font-size: 17px;
+    line-height: 32px;
+    color: #45494F;
+}
+.second_screen{
+    display: flex;
+}
+.second_screen_bg_blue {
+    background: linear-gradient(180deg, #163DA2 0%, #003584 100%);
+    row-gap: 22px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 75px;
+}
+.third_screen_text {
+    row-gap: 22px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /*padding-left: 100px;*/
+}
+.ten_blocks {
+    display: flex;
+    flex-wrap: wrap;
+}
+.h_115 {
+    height: 115px;
+}
+h5.card-title {
+    margin: auto;
+}
+ol {
+    list-style-type: decimal-leading-zero;
+}
+.ol {
+    display: flex;
+    justify-content: space-between;
+}
+.footer_top_center {
+    width: 80%;
+}
+.footer_top_center > button {
+    width: 65%;
+}
+img[alt="Arrow"] {
+    left: 0;
+    top: 30%
+}
+a[href="tel:+49 (0) 211 9232 3052"] {
+    color: black;
+}

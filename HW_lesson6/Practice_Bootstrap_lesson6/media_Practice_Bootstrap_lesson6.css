@@ -1,0 +1,48 @@
+
+@media screen and (max-width: 576px) {
+    .first-screen-left h1 {
+        font-size: 30px;
+        line-height: 32px;
+    }
+    .footer_top_mobile {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 768px) {
+    .second_screen {
+        display: block;
+    }
+    .second_screen_bg_blue {
+        width: 100%;
+    }
+    img[alt="Frigel3"] {
+        width: 100%;
+    }
+    .h_115 {
+        text-align: center;
+    }
+    .ol {
+        display: block;
+    }
+    .footer_top {
+        flex-direction: column-reverse;
+    }
+    .footer_end_mobile_hidden {
+        display: none;
+    }
+    .carousel_button_left, .carousel_button_right {
+        display: none;
+    }
+}
+@media screen and (max-width: 992px){
+    .second_screen_bg_blue {
+        padding: 39px 31px 16px;
+    }
+    .third_screen {
+        flex-direction: column-reverse;
+    }
+    .footer_top_center > button {
+        width: 100%;
+    }
+
+}
