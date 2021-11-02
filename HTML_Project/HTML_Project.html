@@ -1,0 +1,1554 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!------ Include the above in your HEAD tag ---------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="HTML_Project.css">
+    <link rel="stylesheet" href="media_HTML_Project.css">
+    <title>HTML_Project</title>
+</head>
+<body>
+<!--Fixed-header__mobile-->
+<div class="header_-_small-screen container-fluid bg-light shadow border position-fixed">
+    <nav class="d-flex justify-content-around">
+        <div class="text-center">
+            <button class="border-0 bg-transparent" title="Клік">
+                <i class="bi bi-house-door">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                        <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+                    </svg>
+                </i>
+            </button>
+            <br><a href="#" class="text-decoration-none">Головна</a>
+        </div>
+        <div class="text-center">
+            <button class="border-0 bg-transparent" title="Клік">
+                <i class="bi bi-heart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                    </svg>
+                </i>
+            </button>
+            <br><a href="#" class="text-decoration-none">Обране</a>
+        </div>
+        <div class="text-center">
+            <button class="border-0 bg-transparent" title="Клік">
+                <i class="bi bi-cart2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>
+                </i>
+            </button>
+            <br><a href="#" class="text-decoration-none">Корзина</a>
+        </div>
+        <div class="text-center">
+            <img src="image/user.png" alt="Профіль">
+            <br><a href="#" class="text-decoration-none">Профіль</a>
+        </div>
+    </nav>
+</div>
+<!--/Fixed-header__mobile-->
+<header class="shadow">
+<!--    header_top-->
+    <div class="header_top text-white container-fluid bg-dark bg-gradient position-absolute">
+
+        <nav class="container navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i class="bi bi-geo-alt">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg>
+                    </i>
+                    Ваше місто: <span class="text-decoration-underline" data-bs-toggle="modal" data-bs-target="#exampleModalCity" data-bs-whatever="@mdo" title="московське">
+                    Болото
+
+
+                    <div class="modal fade" id="exampleModalCity" tabindex="-1" aria-labelledby="exampleModalLabelCity" aria-hidden="true">
+  <div class="modal-dialog text-dark">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabelCity">Оберіть своє місто</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <input type="text" placeholder="Ваше місто" aria-label="Ваше місто" class="form-control" id="recipient-nameCity">
+          </div>
+          <div class="mb-3">
+            <ul class="list-unstyled">
+                <li class="active" aria-current="true">
+                    <button>москва-Болото</button>
+                </li>
+                <li>
+                    санкт-петербург
+                </li>
+                <li>
+                    краснодар
+                </li>
+                <li>
+                    єкатеринбург
+                </li>
+                <li>
+                    ростов-на-дону
+                </li>
+                <li>
+                    самара
+                </li>
+                </ul>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">тицьни Tab</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+                </span>
+                </a>
+                <div class="info_collab btn-group dropdown bg-transparent">
+                    <button type="button" class="btn text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Інформація
+                    </button>
+                    <ul class="dropdown-menu bg-light bg-gradient">
+                        <!-- Dropdown menu links -->
+                        <li>
+                            <a href="#">
+                                Угода користувача про використання персональних даних
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Політика конфіденційності
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Угода на розсилку рекламних матеріалів
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Політика повернень
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info_collab btn-group dropdown bg-transparent">
+                    <button type="button" class="btn text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Співпраця
+                    </button>
+                    <ul class="dropdown-menu bg-light bg-gradient">
+                        <!-- Dropdown menu links -->
+                        <li>
+                            <a href="#">Контактна інформація</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar">Ще		&circ;</span>
+                </button>
+                <div class="collapse navbar-collapse ms-5" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Доставка</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Оплата</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Гарантія</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Новини</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Журнал</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Про магазин</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+<!--    /header_top-->
+<!--    header_middle-->
+    <div class="header_middle d-flex justify-content-between pt-5 container">
+        <div class="d-flex mt-5">
+            <img src="image/LOGO.png" alt="Logo">
+            <div>
+                <h2>AVT-ZAP</h2>
+                <p>Інтернет-магазин запчастин для АКПП</p>
+            </div>
+        </div>
+        <div class="header_middle_center mt-5">
+            <p class="text-end"><img src="image/time.png" alt="Time">
+                Ми працюємо: будні - 9:00-21:00<br>
+                Cб. - 10:00-15:00
+            </p>
+            <p>
+                <i class="bi bi-geo-alt">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg>
+                </i>
+                Невський пр-т, буд. 45
+            </p>
+        </div>
+        <div class="header_middle_right d-flex mt-5">
+            <div class="text-end"><a href="#" class="bg-success text-decoration-none text-black p-1"><img
+                    src="image/whatsapp.png" alt="">
+                Напишіть нам у WhatsApp</a></div>
+            <div class="text-end">
+                <a href="tel:+7 383 291 92 86" class="text-decoration-none text-dark fs-2">+7 383 291 92 86</a><br>
+                <a href="#" class="link-secondary" data-bs-toggle="modal" data-bs-target="#callMeBackTop" data-bs-whatever="@getbootstrap">форма зворотного зв'язку</a>
+                <div class="modal fade text-start" id="callMeBackTop" tabindex="-1" aria-labelledby="callMeBackTopHeader" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="callMeBackTopHeader">Замовити дзвінок</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="recipient-nameHeader" class="col-form-label">Ваше ім'я:</label>
+                                        <input type="text" class="form-control" id="recipient-nameHeader">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-textHeader" class="col-form-label">Номер телефону:</label>
+                                        <textarea class="form-control" id="message-textHeader"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer text-center">
+                                <button type="button" class="btn btn-primary">Замовити дзвінок</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    /header_middle-->
+<!--    header_bottom-->
+    <div class="container my-3 d-flex">
+
+        <div class="d-flex col-12 col-md-7">
+            <div class="btn-group">
+                <nav class="navbar navbar-dark bg-primary">
+                    <!-- Navbar content -->
+                    <div class="btn-group dropdown bg-transparent">
+                        <button type="button" class="btn text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <ul class="dropdown-menu bg-light bg-gradient">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Каталог запчастин</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Масла</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Фільтри</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Радіатори</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sonnax</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Manual</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Новинки</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Акції</a>
+                            </li>
+                            <li class="nav-item">
+                                І ще безліч всього
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Каталог запчастин</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Масла</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Фільтри</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Радіатори</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sonnax</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Manual</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Новинки</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Акції</a>
+                            </li>
+                        </ul>
+                        <span class="navbar-text mt-3">
+                            І ще безліч всього
+                        </span>
+                    </div>
+                </nav>
+                <button class="header_bottom_collapse btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Каталог
+                </button>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                 aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header bg-success">
+                    <h5 id="offcanvasRightLabel">Каталог</h5>
+                    <button type="button" class="btn-close text-reset bg-danger" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body bg-info bg-gradient">
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#" class="text-white">Каталог запчастин</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white">Масла</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white">Фільтри</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white">Радіатори</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white">Sonnax</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white">Manual</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white">Новинки</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white">Акції</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="input-group" role="group" aria-label="Basic mixed styles example">
+                <input type="text" class="form-control rounded-start bg-transparent" data-bs-toggle="modal" data-bs-target="#search" data-bs-whatever="@fat" placeholder="Пошук за назвою або артикулем"
+                       aria-label="Знайти за назвою або артикулем" aria-describedby="basic-addon1">
+
+                <div class="modal fade" id="search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <div class="mb-3">
+                                        <p class="text-muted mb-0">Знайдені трансмісії</p>
+                                        <ul class="list-unstyled">
+                                            <li class="border_li_search ps-3 fw-bold shadow"><a href="#" class="text-decoration-none link-dark">беТ40</a></li>
+                                            <li class="border_li_search ps-3 fw-bold"><a href="#" class="text-decoration-none link-dark">беТ40</a></li>
+                                            <li class="border_li_search ps-3 fw-bold"><a href="#" class="text-decoration-none link-dark">беТ40</a></li>
+                                        </ul>
+                                        <p class="text-muted mb-0">Знайдені товари</p>
+                                        <ul class="list-unstyled">
+                                            <li class="border_li_search ps-3 fw-bold"><a href="#" class="text-decoration-none link-dark">Насос - Артикул / 43233</a></li>
+                                            <li class="border_li_search ps-3 fw-bold"><a href="#" class="text-decoration-none link-dark">Соленоид - Артикул / 4493934-22</a></li>
+                                        </ul>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary col-4">Знайти</button>
+            </div>
+        </div>
+        <div class="header_bottom_right_full-screen col-5">
+            <nav class="d-flex justify-content-around">
+                <button class="bg-transparent border-0">
+                    <img src="image/user.png" alt="Увійти">
+                        <b>Увійти</b>
+                </button>
+                <button class="px-3 text-center bg-transparent border-top-0 border-bottom-0 border border-secondary">
+                    <i class="bi bi-heart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                        </svg>
+                    </i>
+                    <b>Обране</b>
+                </button>
+                <button class="text-center bg-transparent border-0">
+                    <i class="bi bi-cart2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                        </svg>
+                    </i>
+                    У кошику немає товарів
+                </button>
+            </nav>
+        </div>
+    </div>
+<!--    /header_bottom-->
+</header>
+
+<!--Carousels-->
+<div class="main container">
+    <!--    Carousel top-->
+    <div class="d-flex flex-wrap">
+
+        <div id="carouselWithIndicators" class="carousel slide col-12 col-md-7  col-lg-8" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    <div class="d-flex justify-content-center align-items-center p-2">
+                        <div class="carousel_top_text">
+                            <h1>Зчеплення у зборі</h1>
+                            <a href="#" class="link-secondary fs-3">0AMCLUTCH</a>
+                            <p class="text-black-50 text-decoration-line-through fw-lighter fs-3">18 550,99 ₴ </p>
+                            <p class="text-primary fw-bolder fs-1 mt-2">14 499,99 ₴</p>
+                            <a href="#" class="btn btn-primary fs-3" data-bs-toggle="modal" data-bs-target="#exampleModal00" data-bs-whatever="@whatever">
+                                <i class="bi bi-cart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                         class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                    </svg>
+                                </i>В кошик
+                            </a>
+                            <div class="modal fade" id="exampleModal00" tabindex="-1" aria-labelledby="exampleModalLabel00" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content border border-primary border-3">
+                                        <div class="modal-header">
+                                            <img src="image/Carousel.png" alt="Фото товару" class="w-25">
+                                            <div>
+                                                <h4 class="text-primary">Товар було додано в кошик</h4>
+                                                <p>Зчеплення у зборі</p>
+                                            </div>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="image/Carousel.png" alt="Carousel">
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+
+                    <div class="d-flex justify-content-center align-items-center p-2">
+                        <div class="carousel_top_text">
+                            <h1>Зчеплення у зборі</h1>
+                            <a href="#" class="link-secondary fs-3">0AMCLUTCH</a>
+                            <p class="text-black-50 text-decoration-line-through fw-lighter fs-3">18 550,99 ₴ </p>
+                            <p class="text-primary fw-bolder fs-1 mt-2">14 499,99 ₴</p>
+                            <a href="#" class="btn btn-primary fs-3" data-bs-toggle="modal" data-bs-target="#exampleModal01" data-bs-whatever="@whatever">
+                                <i class="bi bi-cart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                         class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                    </svg>
+                                </i>В кошик
+                            </a>
+                            <div class="modal fade" id="exampleModal01" tabindex="-1" aria-labelledby="exampleModalLabel01" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content border border-primary border-3">
+                                        <div class="modal-header">
+                                            <img src="image/Carousel.png" alt="Фото товару" class="w-25">
+                                            <div>
+                                                <h4 class="text-primary">Товар було додано в кошик</h4>
+                                                <p>Зчеплення у зборі</p>
+                                            </div>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="image/Carousel.png" alt="Carousel">
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <div class="d-flex justify-content-center align-items-center p-2">
+                        <div class="carousel_top_text">
+                            <h1>Зчеплення у зборі</h1>
+                            <a href="#" class="link-secondary fs-3">0AMCLUTCH</a>
+                            <p class="text-black-50 text-decoration-line-through fw-lighter fs-3">18 550,99 ₴ </p>
+                            <p class="text-primary fw-bolder fs-1 mt-2">14 499,99 ₴</p>
+                            <a href="#" class="btn btn-primary fs-3" data-bs-toggle="modal" data-bs-target="#exampleModal02" data-bs-whatever="@whatever">
+                                <i class="bi bi-cart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                         class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                    </svg>
+                                </i>В кошик
+                            </a>
+                            <div class="modal fade" id="exampleModal02" tabindex="-1" aria-labelledby="exampleModalLabel02" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content border border-primary border-3">
+                                        <div class="modal-header">
+                                            <img src="image/Carousel.png" alt="Фото товару" class="w-25">
+                                            <div>
+                                                <h4 class="text-primary">Товар було додано в кошик</h4>
+                                                <p>Зчеплення у зборі</p>
+                                            </div>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="image/Carousel.png" alt="Carousel">
+                    </div>
+
+                </div>
+            </div>
+            <a class="carousel-control-prev shadow" href="#carouselWithIndicators" role="button"
+               data-bs-slide="prev">
+                <span class="carousel-control-prev-icon shadow rounded-circle bg-white bg-gradient" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next shadow" href="#carouselWithIndicators" role="button"
+               data-bs-slide="next">
+                <span class="carousel-control-next-icon shadow rounded-circle bg-white bg-gradient" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+
+
+        <div class="not_carousel d-flex d-md-block col-12 col-md-5 col-lg-4">
+            <div class="card mb-3 bg-light" style="max-width: 540px;">
+                <div class="p-3 row g-0">
+                    <b class="mb-2">Акція</b>
+                    <div class="col-md-4">
+                        <img src="image/Sale.png" class="img-fluid rounded-start" alt="Sale">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body pb-0">
+                            <h5 class="card-title">Обгінна муфта гідротрансформатора</h5>
+                            <p class="card-text">BW-SP-2 SONNAX</p>
+                            <p class="card-text text-warning fw-bolder d-flex">4 430₴&emsp;<span
+                                    class="text-decoration-line-through fw-lighter text-muted">5 430₴</span>&emsp;
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal11" data-bs-whatever="@whatever">
+                                    <i class="bi bi-cart">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                             class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                        </svg>
+                                    </i>
+                                </a>
+                            <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel11" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content border border-primary border-3">
+                                        <div class="modal-header">
+                                            <img src="image/Sale.png" alt="Фото товару" class="w-25">
+                                            <div>
+                                                <h4 class="text-primary">Товар було додано в кошик</h4>
+                                                <p>Обгінна муфта гідротрансформатора</p>
+                                            </div>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 bg-light" style="max-width: 540px;">
+                <div class="p-3 row g-0">
+                    <b class="mb-2">Акція</b>
+                    <div class="col-md-4">
+                        <img src="image/Sale1.png" class="img-fluid rounded-start" alt="Sale">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body pb-0">
+                            <h5 class="card-title">Комплект фрикційних дисків</h5>
+                            <p class="card-text">BW-SP-2 SONNAX</p>
+                            <p class="card-text text-warning fw-bolder d-flex">4 430₴&emsp;<span
+                                    class="text-decoration-line-through fw-lighter text-muted">5 430₴</span>&emsp;
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal12" data-bs-whatever="@whatever">
+                                    <i class="bi bi-cart">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                             class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                        </svg>
+                                    </i>
+                                </a>
+                            <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel12" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content border border-primary border-3">
+                                        <div class="modal-header">
+                                            <img src="image/Sale1.png" alt="Фото товару" class="w-25">
+                                            <div>
+                                                <h4 class="text-primary">Товар було додано в кошик</h4>
+                                                <p>Комплект фрикційних дисків</p>
+                                            </div>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    Carousel bottom-->
+    <div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex">
+                        <div class="card mb-3 col-4" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Масла</h5>
+                                        <p class="card-text">Трансмісійне масло; <br>Присадка в масло АКПП</p>
+                                        <button class="btn btn-primary">Перейти</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="image/carousel_1.png" class="img-fluid rounded-start" alt="Масла">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 col-4" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Фільтри</h5>
+                                        <p class="card-text">Масляний фільтр;<br>
+                                            Фільтр повітряний</p>
+                                        <button class="btn btn-primary">Перейти</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="image/carousel_2.png" class="img-fluid rounded-start" alt="Фільтри">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 col-4" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Радіатори</h5>
+                                        <p class="card-text">Додаткові радіатори <br>&nbsp;</p>
+                                        <button class="btn btn-primary">Перейти</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="image/carousel_3.png" class="img-fluid rounded-start" alt="Радіатори">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex overflow-auto">
+                        <div class="card mb-3 col-4" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Масла</h5>
+                                        <p class="card-text">Трансмісійне масло; <br>Присадка в масло АКПП</p>
+                                        <button class="btn btn-primary">Перейти</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="image/carousel_1.png" class="img-fluid rounded-start" alt="Масла">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 col-4" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Фільтри</h5>
+                                        <p class="card-text">Масляний фільтр; <br>Фільтр повітряний</p>
+                                        <button class="btn btn-primary">Перейти</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="image/carousel_2.png" class="img-fluid rounded-start" alt="Фільтри">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 col-4" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Радіатори</h5>
+                                        <p class="card-text">Додаткові радіатори <br>&nbsp;</p>
+                                        <button class="btn btn-primary">Перейти</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="image/carousel_3.png" class="img-fluid rounded-start" alt="Радіатори">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev position-relative" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon carousel_long shadow bg-secondary rounded-circle position-absolute"
+                  aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next position-relative" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon carousel_long shadow bg-secondary rounded-circle position-absolute"
+                  aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<!--/Carousels-->
+
+<!--Products-->
+<div class="container">
+    <!--    Top-->
+    <div class="my-3 d-flex col-md-9 col-lg-6 overflow-auto">
+        <button type="button" class="w-50 me-2 btn btn-primary">Добірки товарів</button>
+        <button type="button" class="w-25 mx-2 btn btn-light text-primary border-primary">Акції</button>
+        <button type="button" class="w-50 ms-2 btn btn-light text-primary border-primary">Зараз купують</button>
+    </div>
+    <!--    /Top-->
+    <!--    Middle-->
+    <div class="products_middle_img row gy-5">
+        <div class="col-6 col-md-4 col-lg-3">
+            <div class="mb-4">
+                <div class="card border-0" style="width: 18rem;">
+                    <img src="image/Show_more1.png" class="card-img-top" alt="Intermediate accumelator sleeve">
+                    <div class="card-body">
+                        <div class="small_star">
+                            <p class="text-warning fw-light"><img src="image/Star.png" alt="Star"> 4.5&ensp;<span
+                                    class="text-muted">10 відгуків</span></p>
+                        </div>
+                        <h5 class="card-title">Intermediate accumelator sleeve</h5>
+                        <p class="card-text">ЦІНА <a href="#">згідно попиту</a></p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal20" data-bs-whatever="@whatever">
+                            <i class="bi bi-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                            </i> В кошик
+                        </a>
+                        <div class="modal fade" id="exampleModal20" tabindex="-1" aria-labelledby="exampleModalLabel20" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content border border-primary border-3">
+                                    <div class="modal-header">
+                                        <img src="image/Show_more1.png" alt="Фото товару" class="w-25">
+                                        <div>
+                                            <h4 class="text-primary">Товар було додано в кошик</h4>
+                                            <p>Intermediate accumelator sleeve</p>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <div class="card border-0" style="width: 18rem;">
+                    <img src="image/Show_more1.png" class="card-img-top" alt="Intermediate accumelator sleeve">
+                    <div class="card-body">
+                        <div class="small_star">
+                            <p class="text-warning fw-light"><img src="image/Star.png" alt="Star"> 4.5&ensp;<span
+                                    class="text-muted">10 відгуків</span></p>
+                        </div>
+                        <h5 class="card-title">Intermediate accumelator sleeve</h5>
+                        <p class="card-text">ЦІНА <a href="#">згідно попиту</a></p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal21" data-bs-whatever="@whatever">
+                            <i class="bi bi-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                            </i> В кошик
+                        </a>
+                        <div class="modal fade" id="exampleModal21" tabindex="-1" aria-labelledby="exampleModalLabel21" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content border border-primary border-3">
+                                    <div class="modal-header">
+                                        <img src="image/Show_more1.png" alt="Фото товару" class="w-25">
+                                        <div>
+                                            <h4 class="text-primary">Товар було додано в кошик</h4>
+                                            <p>Intermediate accumelator sleeve</p>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="min_width_none mb-4">
+                <div class="card border-0" style="width: 18rem;">
+                    <img src="image/Show_more1.png" class="card-img-top" alt="Intermediate accumelator sleeve">
+                    <div class="card-body">
+                        <div class="small_star">
+                            <p class="text-warning fw-light"><img src="image/Star.png" alt="Star"> 4.5&ensp;<span
+                                    class="text-muted">10 відгуків</span></p>
+                        </div>
+                        <h5 class="card-title">Intermediate accumelator sleeve</h5>
+                        <p class="card-text">ЦІНА <a href="#">згідно попиту</a></p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal22" data-bs-whatever="@whatever">
+                            <i class="bi bi-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                            </i> В кошик
+                        </a>
+                        <div class="modal fade" id="exampleModal22" tabindex="-1" aria-labelledby="exampleModalLabel22" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content border border-primary border-3">
+                                    <div class="modal-header">
+                                        <img src="image/Show_more1.png" alt="Фото товару" class="w-25">
+                                        <div>
+                                            <h4 class="text-primary">Товар було додано в кошик</h4>
+                                            <p>Intermediate accumelator sleeve</p>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+            <div class="mb-4">
+                <div class="card border-0" style="width: 18rem;">
+                    <p class="text-warning position-absolute">-40%</p>
+                    <img src="image/Show_more2.png" class="card-img-top" alt="Комплект фрикційних дисків">
+                    <div class="card-body">
+                        <div class="small_star">
+                            <p class="text-warning fw-light"><img src="image/Star.png" alt="Star"> 4.5&ensp;<span
+                                    class="text-muted">10 відгуків</span></p>
+                        </div>
+                        <h5 class="card-title">Комплект фрикційних дисків</h5>
+                        <p class="card-text text-warning fw-bolder">4 430₴&emsp;<span
+                                class="text-decoration-line-through fw-lighter text-muted">5 430₴</span></p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal30" data-bs-whatever="@whatever">
+                            <i class="bi bi-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                            </i> В кошик
+                        </a>
+                        <div class="modal fade" id="exampleModal30" tabindex="-1" aria-labelledby="exampleModalLabel30" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content border border-primary border-3">
+                                    <div class="modal-header">
+                                        <img src="image/Show_more2.png" alt="Фото товару" class="w-25">
+                                        <div>
+                                            <h4 class="text-primary">Товар було додано в кошик</h4>
+                                            <p>Комплект фрикційних дисків</p>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <div class="card border-0" style="width: 18rem;">
+                    <p class="text-warning position-absolute">-40%</p>
+                    <img src="image/Show_more2.png" class="card-img-top" alt="Комплект фрикційних дисків">
+                    <div class="card-body">
+                        <div class="small_star">
+                            <p class="text-warning fw-light"><img src="image/Star.png" alt="Star"> 4.5&ensp;<span
+                                    class="text-muted">10 відгуків</span></p>
+                        </div>
+                        <h5 class="card-title">Комплект фрикційних дисків</h5>
+                        <p class="card-text text-warning fw-bolder">4 430₴&emsp;<span
+                                class="text-decoration-line-through fw-lighter text-muted">5 430₴</span></p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal31" data-bs-whatever="@whatever">
+                            <i class="bi bi-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                            </i> В кошик
+                        </a>
+                        <div class="modal fade" id="exampleModal31" tabindex="-1" aria-labelledby="exampleModalLabel31" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content border border-primary border-3">
+                                    <div class="modal-header">
+                                        <img src="image/Show_more2.png" alt="Фото товару" class="w-25">
+                                        <div>
+                                            <h4 class="text-primary">Товар було додано в кошик</h4>
+                                            <p>Комплект фрикційних дисків</p>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="min_width_none mb-4">
+                <div class="card border-0" style="width: 18rem;">
+                    <p class="text-warning position-absolute">-40%</p>
+                    <img src="image/Show_more2.png" class="card-img-top" alt="Комплект фрикційних дисків">
+                    <div class="card-body">
+                        <div class="small_star">
+                            <p class="text-warning fw-light"><img src="image/Star.png" alt="Star"> 4.5&ensp;<span
+                                    class="text-muted">10 відгуків</span></p>
+                        </div>
+                        <h5 class="card-title">Комплект фрикційних дисків</h5>
+                        <p class="card-text text-warning fw-bolder">4 430₴&emsp;<span
+                                class="text-decoration-line-through fw-lighter text-muted">5 430₴</span></p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal32" data-bs-whatever="@whatever">
+                            <i class="bi bi-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                            </i> В кошик
+                        </a>
+                        <div class="modal fade" id="exampleModal32" tabindex="-1" aria-labelledby="exampleModalLabel32" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content border border-primary border-3">
+                                    <div class="modal-header">
+                                        <img src="image/Show_more2.png" alt="Фото товару" class="w-25">
+                                        <div>
+                                            <h4 class="text-primary">Товар було додано в кошик</h4>
+                                            <p>Комплект фрикційних дисків</p>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products_768px col-6 col-md-4 col-lg-3">
+            <div class="mb-4">
+                <div class="card border-0" style="width: 18rem;">
+                    <img src="image/Show_more1.png" class="card-img-top" alt="Intermediate accumelator sleeve">
+                    <div class="card-body">
+                        <div class="small_star">
+                            <p class="text-warning fw-light"><img src="image/Star.png" alt="Star"> 4.5&ensp;<span
+                                    class="text-muted">10 відгуків</span></p>
+                        </div>
+                        <h5 class="card-title">Intermediate accumelator sleeve</h5>
+                        <p class="card-text">ЦІНА <a href="#">згідно попиту</a></p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal23" data-bs-whatever="@whatever">
+                            <i class="bi bi-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                            </i> В кошик
+                        </a>
+                        <div class="modal fade" id="exampleModal23" tabindex="-1" aria-labelledby="exampleModalLabel23" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content border border-primary border-3">
+                                    <div class="modal-header">
+                                        <img src="image/Show_more1.png" alt="Фото товару" class="w-25">
+                                        <div>
+                                            <h4 class="text-primary">Товар було додано в кошик</h4>
+                                            <p>Intermediate accumelator sleeve</p>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <div class="card border-0" style="width: 18rem;">
+                    <img src="image/Show_more1.png" class="card-img-top" alt="Intermediate accumelator sleeve">
+                    <div class="card-body">
+                        <div class="small_star">
+                            <p class="text-warning fw-light"><img src="image/Star.png" alt="Star"> 4.5&ensp;<span
+                                    class="text-muted">10 відгуків</span></p>
+                        </div>
+                        <h5 class="card-title">Intermediate accumelator sleeve</h5>
+                        <p class="card-text">ЦІНА <a href="#">згідно попиту</a></p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal24" data-bs-whatever="@whatever">
+                            <i class="bi bi-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                            </i> В кошик
+                        </a>
+                        <div class="modal fade" id="exampleModal24" tabindex="-1" aria-labelledby="exampleModalLabel24" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content border border-primary border-3">
+                                    <div class="modal-header">
+                                        <img src="image/Show_more1.png" alt="Фото товару" class="w-25">
+                                        <div>
+                                            <h4 class="text-primary">Товар було додано в кошик</h4>
+                                            <p>Intermediate accumelator sleeve</p>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="min_width_none mb-4">
+                <div class="card border-0" style="width: 18rem;">
+                    <img src="image/Show_more1.png" class="card-img-top" alt="Intermediate accumelator sleeve">
+                    <div class="card-body">
+                        <div class="small_star">
+                            <p class="text-warning fw-light"><img src="image/Star.png" alt="Star"> 4.5&ensp;<span
+                                    class="text-muted">10 відгуків</span></p>
+                        </div>
+                        <h5 class="card-title">Intermediate accumelator sleeve</h5>
+                        <p class="card-text">ЦІНА <a href="#">згідно попиту</a></p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal25" data-bs-whatever="@whatever">
+                            <i class="bi bi-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                            </i> В кошик
+                        </a>
+                        <div class="modal fade" id="exampleModal25" tabindex="-1" aria-labelledby="exampleModalLabel25" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content border border-primary border-3">
+                                    <div class="modal-header">
+                                        <img src="image/Show_more1.png" alt="Фото товару" class="w-25">
+                                        <div>
+                                            <h4 class="text-primary">Товар було додано в кошик</h4>
+                                            <p>Intermediate accumelator sleeve</p>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products_992px col-6 col-md-4 col-lg-3">
+            <div class="mb-4">
+                <div class="card border-0" style="width: 18rem;">
+                    <img src="image/Show_more4.png" class="card-img-top" alt="Intermediate accumelator sleeve">
+                    <div class="card-body">
+                        <div class="small_star">
+                            <p class="text-warning fw-light"><img src="image/Star.png" alt="Star"> 4.5&ensp;<span
+                                    class="text-muted">10 відгуків</span></p>
+                        </div>
+                        <h5 class="card-title">Intermediate accumelator sleeve</h5>
+                        <p class="card-text">ЦІНА <a href="#">згідно попиту</a></p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal40" data-bs-whatever="@whatever">
+                            <i class="bi bi-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                            </i> В кошик
+                        </a>
+                        <div class="modal fade" id="exampleModal40" tabindex="-1" aria-labelledby="exampleModalLabel40" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content border border-primary border-3">
+                                    <div class="modal-header">
+                                        <img src="image/Show_more4.png" alt="Фото товару" class="w-25">
+                                        <div>
+                                            <h4 class="text-primary">Товар було додано в кошик</h4>
+                                            <p>Intermediate accumelator sleeve</p>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <div class="card border-0" style="width: 18rem;">
+                    <img src="image/Show_more4.png" class="card-img-top" alt="Intermediate accumelator sleeve">
+                    <div class="card-body">
+                        <div class="small_star">
+                            <p class="text-warning fw-light"><img src="image/Star.png" alt="Star"> 4.5&ensp;<span
+                                    class="text-muted">10 відгуків</span></p>
+                        </div>
+                        <h5 class="card-title">Intermediate accumelator sleeve</h5>
+                        <p class="card-text">ЦІНА <a href="#">згідно попиту</a></p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal41" data-bs-whatever="@whatever">
+                            <i class="bi bi-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                            </i> В кошик
+                        </a>
+                        <div class="modal fade" id="exampleModal41" tabindex="-1" aria-labelledby="exampleModalLabel41" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content border border-primary border-3">
+                                    <div class="modal-header">
+                                        <img src="image/Show_more4.png" alt="Фото товару" class="w-25">
+                                        <div>
+                                            <h4 class="text-primary">Товар було додано в кошик</h4>
+                                            <p>Intermediate accumelator sleeve</p>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    /Middle-->
+    <!--    Bottom-->
+    <div class="text-center">
+        <p>
+            <button class="btn btn-light text-primary border-primary px-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Показати ще
+            </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="alert alert-danger alert-dismissible fade show col-8" role="alert">
+                <strong>████████████████████████████████████████</strong>
+                ████████████████████████████████████████
+                ██████▀░░░░░░░░▀████████▀▀░░░░░░░▀██████
+                ████▀░░░░░░░░░░░░▀████▀░░░░░░░░░░░░▀████
+                ██▀░░░░░░░░░░░░░░░░▀▀░░░░░░░░░░░░░░░░▀██
+                ██░░░░░░░░░░░░░░░░░░░▄▄░░░░░░░░░░░░░░░██
+                ██░░░░░░░░░░░░░░░░░░█░█░░░░░░░░░░░░░░░██
+                ██░░░░░░░░░░░░░░░░░▄▀░█░░░░░░░░░░░░░░░██
+                ██░░░░░░░░░░████▄▄▄▀░░▀▀▀▀▄░░░░░░░░░░░██
+                ██▄░░░░░░░░░████░░░░░░░░░░█░░░░░░░░░░▄██
+                ████▄░░░░░░░████░░░░░░░░░░█░░░░░░░░▄████
+                ██████▄░░░░░████▄▄▄░░░░░░░█░░░░░░▄██████
+                ████████▄░░░▀▀▀▀░░░▀▀▀▀▀▀▀░░░░░▄████████
+                ██████████▄░░░░░░░░░░░░░░░░░░▄██████████
+                ████████████▄░░░░░░░░░░░░░░▄████████████
+                ██████████████▄░░░░░░░░░░▄██████████████
+                ████████████████▄░░░░░░▄████████████████
+                ██████████████████▄▄▄▄██████████████████
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+    <!--    /Bottom-->
+</div>
+<!--/Products-->
+<!--News-->
+<div>
+    <h2 class="container">НОВИНИ</h2>
+    <div class="news_bg bg-secondary bg-gradient">
+        <div class="container d-flex">
+            <input type="range" aria-label="News" class="form-range" id="customRange1">
+            <input type="range" aria-label="News" class="form-range" id="customRange2">
+            <input type="range" aria-label="News" class="form-range" id="customRange3">
+            <input type="range" aria-label="News" class="form-range" id="customRange4">
+        </div>
+    </div>
+    <div class="container d-flex flex-wrap">
+        <div class="col-12 col-md-4 col-lg-3">
+            <button type="button" class="rotate mt-3 btn btn-dark position-relative">
+                3 листопада
+                <svg width="1em" height="1em" viewBox="0 0 16 16"
+                     class="position-absolute top-100 start-50 translate-middle mt-1 bi bi-caret-down-fill"
+                     fill="#212529" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg>
+            </button>
+            <br>
+            <div class="my-3"><a href="#">Зміни на сайті</a></div>
+            <p>Нещодавно на сайті ми ввели
+                чергову порцію змін,
+                які, як нам здається, повинні
+                покращити функціональність сайту
+                і зробити його більш зручним для
+                користувачів. Реакція відвідувачів
+                не змусила на себе довго чекати...</p>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3">
+            <button type="button" class="rotate mt-3 btn btn-dark position-relative">
+                2 листопада
+                <svg width="1em" height="1em" viewBox="0 0 16 16"
+                     class="position-absolute top-100 start-50 translate-middle mt-1 bi bi-caret-down-fill"
+                     fill="#212529" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg>
+            </button>
+            <br>
+            <div class="my-3"><a href="#">Вийшла нова версія для
+                мобільних додатків</a></div>
+            <span>Що нового у 2.0:</span>
+            <ul class="list-unstyled">
+                <li>— Додана історія пошуку;</li>
+                <li>— додано синхронізацію із сервером;</li>
+                <li>— Виправлення помилок.</li>
+            </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3">
+            <button type="button" class="rotate mt-3 btn btn-dark position-relative">
+                1 листопада
+                <svg width="1em" height="1em" viewBox="0 0 16 16"
+                     class="position-absolute top-100 start-50 translate-middle mt-1 bi bi-caret-down-fill"
+                     fill="#212529" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg>
+            </button>
+            <br>
+            <div class="my-3"><a href="#">Чергова порція оновлень для
+                мобільних додатків</a></div>
+            <span>Що нового додано:</span>
+            <ul class="list-unstyled">
+                <li>— Підтримка пуш-повідомлень;</li>
+                <li>— Розділи для покупців;</li>
+                <li>— Перегляд покупця в замовленнях;</li>
+                <li>— Можливість пошуку;</li>
+                <li>— виправлення помилок.</li>
+            </ul>
+        </div>
+        <div class="news_992px col-12 col-md-4 col-lg-3">
+            <button type="button" class="rotate mt-3 btn btn-dark position-relative">
+                31 жовтня
+                <svg width="1em" height="1em" viewBox="0 0 16 16"
+                     class="position-absolute top-100 start-50 translate-middle mt-1 bi bi-caret-down-fill"
+                     fill="#212529" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg>
+            </button>
+            <br>
+            <div class="my-3"><a href="#">Інтерфейс замовлень для покупців
+                став більш функціональним</a></div>
+            <p>Він дозволяє виводити все
+                формовані системою
+                повідомлення(e-mail, смс, web) в
+                єдиному вікні зі зручною системою
+                фільтрації пошуку.</p>
+        </div>
+
+    </div>
+</div>
+<!--/News-->
+
+<footer class="bg-dark bg-gradient text-white">
+    <!-- Grid container -->
+    <div class="footer container p-4 d-flex justify-content-between flex-wrap">
+        <div class="footer_left col-12 col-lg-8">
+
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h5 class="text-uppercase text-muted">Каталог</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#" class="text-white">Каталог запчастин</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Масла</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Фільтри</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Радіатори</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Sonnax</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Manual</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Новинки</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Акції</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h5 class="text-uppercase text-muted">РУБРИКАТОР</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#" class="text-white">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Оплата</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Гарантія</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Новини</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Журнал</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Про магазин</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Контактна інформація</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h5 class="text-uppercase text-muted">ІНФОРМАЦІЯ</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#" class="text-white">Угода користувача про використання персональних даних</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Політика конфіденційності</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Угода на розсилку рекламних матеріалів</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Політика повернень</a>
+                            </li>
+                            <li class="mt-3">
+                                Ми приймаємо готівку <br>
+                                <img src="image/Visa_Mastercard.png" alt="VisaMasterCard">
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <div class="footer_right col-12 col-lg-4">
+
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-md-5 col-lg-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase text-muted">КОНТАКТИ</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#" class="text-white">+7 383 291 92 86</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">info@avt-zap.ru</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-5 col-lg-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase text-muted">АДРЕСА</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#" class="text-white">м. Новосибірськ,<br>
+                                    вул. Планувальна, 5, офіс 105</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+            <div class="d-flex flex-wrap">
+
+                <!-- Section: Text -->
+                <section class="col-md-6 col-lg-12 text-start mb-4 d-flex flex-wrap">
+                    <p class="col-lg-7 text-muted">Ми онлайн, скористайтесь</p>
+                    <p class="col-lg-5">
+
+                        <a href="#" class="link-light shadow" data-bs-toggle="modal" data-bs-target="#callMeBackBottom" data-bs-whatever="@getabootstrap">форма зворотного зв'язку</a></p>
+                    <div class="modal fade text-dark" id="callMeBackBottom" tabindex="-1" aria-labelledby="callMeBackTopFooter" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="callMeBackTopFooter">Замовити дзвінок</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="recipient-nameFooter" class="col-form-label">Ваше ім'я:</label>
+                                            <input type="text" class="form-control" id="recipient-nameFooter">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message-textFooter" class="col-form-label">Номер телефону:</label>
+                                            <textarea class="form-control" id="message-textFooter"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer text-center">
+                                    <button type="button" class="btn btn-primary">Замовити дзвінок</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- Section: Text -->
+
+                <!-- Section: Form -->
+                <section class="col-12 col-sm-11 col-md-6 col-lg-12 ">
+                    <form action="">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2 text-muted">
+                                <strong>Підпишіться на нашу розсилку і ви першими дізнаєтеся про знижки та акції</strong>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <div class="input-group  mb-4" role="group" aria-label="Basic mixed styles example">
+                            <input type="email" class="form-control rounded-start bg-transparent text-white col-8"
+                                   placeholder="Введіть ваш e-mail" aria-label="Введіть ваш e-mail"
+                                   aria-describedby="basic-addon1">
+                            <button type="button" class="btn btn-primary col-4">Підписатися</button>
+                        </div>
+
+                    </form>
+                </section>
+                <!-- Section: Form -->
+            </div>
+
+            <!-- Section: Social media -->
+            <section class="footer_social_media mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://uk-ua.facebook.com/" role="button">
+                    <i class="bi bi-facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                    </i>
+                </a>
+
+                <!-- Telegram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://telegram.org/" role="button">
+                    <i class="bi bi-telegram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-telegram" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                        </svg>
+                    </i>
+                </a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/?lang=uk" role="button">
+                    <i class="bi bi-twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                    </i>
+                </a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/" role="button">
+                    <i class="bi bi-google">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-google" viewBox="0 0 16 16">
+                            <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                        </svg>
+                        +</i>
+                </a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+    </div>
+
+    <!-- Copyright -->
+    <div class="container bg-gradient text-start p-3 text-muted" style="background-color: rgba(0, 0, 0, 0.2);">
+        2017 ©
+        <a class="text-muted" href="https://google.com/">ТОВ «АВТ-ЗАП» - запчастини для акпп</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+</html>
