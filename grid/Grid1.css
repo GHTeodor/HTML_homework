@@ -205,6 +205,5 @@ footer:hover i.f {
     grid-template-columns: repeat(3, 1fr);
 }
 .footer_circle_row > div {
-    width: 30%;
     margin: 0 auto;
 }
