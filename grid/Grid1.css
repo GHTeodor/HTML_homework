@@ -4,7 +4,7 @@ body {
 }
 .site {
     margin: 5% auto auto;
-    width: 70vw;
+    width: 40vw;
     background-color: ghostwhite;
     border-radius: 10px;
 }
@@ -61,7 +61,7 @@ input {
 }
 .header_3 {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 8fr 20fr;
     grid-gap: 9%;
     padding-right: 9%;
     padding-left: 9%;
